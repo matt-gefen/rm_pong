@@ -4,7 +4,7 @@ This is a first attempt at diving into the world of C# and Unity Game Developmen
 
 I consider this project a fully educational exercise and hope you enjoy my own version of the classic game, Pong!
 
-## Download
+## Download (Mac Only for now)
 https://drive.google.com/file/d/1jfwnWW0sVBS_Bt4JyjIpEMq3zEWatgBE/view
 
 ## Controls
