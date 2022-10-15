@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
             PlayerScore2++;
         }
 
-        if (PlayerScore1 == 2 || PlayerScore2 == 2) {
+        if (PlayerScore1 == 5 || PlayerScore2 == 5) {
         // victoryMusic.SendMessage("StartAudio", null, SendMessageOptions.RequireReceiver);
             AudioManager audioManager = FindObjectOfType<AudioManager>();
             audioManager.StartVictoryAudio();
@@ -53,12 +53,12 @@ public class GameManager : MonoBehaviour
             audioManager.StartBGAudio();
         }
 
-        if (PlayerScore1 == 2)
+        if (PlayerScore1 == 5)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER ONE WINS");
             theBall.SendMessage("ResetBallWin", null, SendMessageOptions.RequireReceiver);
             
-        } else if (PlayerScore2 == 2)
+        } else if (PlayerScore2 == 5)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER TWO WINS");
             theBall.SendMessage("ResetBallWin", null, SendMessageOptions.RequireReceiver);
@@ -66,13 +66,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    // public static void OnVictory(int PlayerScore1, int PlayerScore2) {
-    //     if (PlayerScore1 == 2 || PlayerScore2 == 2) {
-    //         // victoryMusic.SendMessage("StartAudio", null, SendMessageOptions.RequireReceiver);
-    //         AudioManager audioManager = FindObjectOfType<AudioManager>();
-    //         audioManager.StartVictoryAudio();
-    //     }
-    // }
     // Update is called once per frame
     void Update()
     {
